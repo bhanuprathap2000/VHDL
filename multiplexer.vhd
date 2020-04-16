@@ -15,7 +15,7 @@ process(A,B,C,D,SEL)
 variable temp:std_logic;
 begin
 case SEL is
-when "00" =>temp:=A;
+when "00" =>temp:=A;-- these are branches of case statement
 when "01" =>temp:=B;
 when "10" => temp:=C;
 when others => temp:='X';--X means unknown and U means uninitilized and z means high impedence
