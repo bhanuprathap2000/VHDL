@@ -4,8 +4,8 @@ USE IEEE.NUMERIC_STD.ALL;
 
 entity STD_FIFO is
 	Generic (
-		constant DATA_WIDTH  : positive := 8;
-		constant FIFO_DEPTH	: positive := 8
+		constant DATA_WIDTH  : positive := 16;
+		constant FIFO_DEPTH	: positive := 1024
 	);
 	Port ( 
 		CLK		: in  STD_LOGIC;
