@@ -25,6 +25,8 @@ begin
 
 	-- Memory Pointer Process
 	fifo_proc : process (CLK)
+	--data type declaration
+	
 		type FIFO_Memory is array (0 to FIFO_DEPTH - 1) of STD_LOGIC_VECTOR (DATA_WIDTH - 1 downto 0);
 		variable Memory : FIFO_Memory;
 		
